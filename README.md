@@ -3,7 +3,7 @@
 # 🧠 TriageX_IoT – Forensic Triage for OpenWrt / IoT Devices
 
 **Author:** Jesús D. Angosto (@jdangosto)  
-**Version:** 6.1 (Educational / 2025)
+**Version:** 1.0.0 (Educational / 2025)
 
 ---
 
@@ -31,14 +31,14 @@ Written in **bash + python**, it extracts key artifacts, detects persistence mec
   ```bash
   sudo apt install bash coreutils findutils rsync sqlite3 python3 dropbear-bin tar gzip grep
 
-## Usage
+## 🚀 Usage
 sudo mkdir -p /mnt/iotgoat_ro
 sudo guestmount -a IoTGoat-x86.vmdk -i --ro /mnt/iotgoat_ro/
 
 ## Run the triage 
 sudo ./triageX_iot.sh /mnt/iotgoat_ro /mnt/forensics/iot_evidences
 
-## Output Strcuture
+## 📂 Output Strcuture
 iot_evidences/
 ├── auth/
 │   └── dropbear_fingerprint.txt
@@ -55,7 +55,7 @@ iot_evidences/
 ├── forensic_report.md
 └── iot_evidences.tar.gz
 
-## Modules and Artifacts
+## 🧩 Modules and Artifacts
 | Module                        | Collected Evidence                                         |
 | ----------------------------- | ---------------------------------------------------------- |
 | **Authentication / Dropbear** | `/etc/passwd`, `/etc/shadow`, SHA-256 host-key fingerprint |
@@ -68,7 +68,7 @@ iot_evidences/
 | **SQLite DBs**                | Table listing and sample content                           |
 | **SSH Brute-Force Analysis**  | `ssh_events.txt`, `ssh_bruteforce_summary.csv`             |
 
-## Key Files
+## 🧾 Key Files
 | File                          | Description                            |
 | ----------------------------- | -------------------------------------- |
 | `triageX_iot.sh`              | Main script                            |
@@ -76,7 +76,7 @@ iot_evidences/
 | `summary_report.txt`          | Quick summary of findings              |
 | `run.log`                     | Execution log for debug / traceability |
 
-## Example Run
+## 🧰 Example Run
 $ sudo ./triageX_IOT.sh /mnt/iotgoat_ro iot_evidences
 
 ##################################################################
