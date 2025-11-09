@@ -79,39 +79,5 @@ iot_evidences/
 ## 🧰 Example Run
 $ sudo ./triageX_IOT.sh /mnt/iotgoat_ro iot_evidences
 
-triageX_offline_iot_v6.1 - Inicio: 2025-11-09T16:31:16Z
-Rootfs: /mnt/iotgoat_ro
-Outdir: iot_evidences
-Metadata y firmware info
-Metadata OK
-Construyendo merged_rootfs (rom + overlay + root)
-merged_rootfs OK
-Copy /etc y UCI configs
-/etc & UCI OK
-Users & SSH (Dropbear fingerprint)
-Auth & SSH OK
-Persistencia (init, rc, cron, uci-defaults, keep.d, hotplug)
-Persistencia OK
-Configuración de red y servicios
-Red/Servicios OK
-Logs y artefactos temporales
-Logs/tmp/run OK
-LuCI deep scan (ROOT + merged_rootfs)
-==== LuCI SUMMARY ====
-LuCI code: yes
-LuCI CGI : yes
-LuCI sessions count: 0
-======================
-LuCI OK
-Config diff /etc/config vs /rom/etc/config
-No /rom/etc/config; se omite diff.
-SQLite inspect
-SQLite OK
-Mosquitto / MQTT
-MQTT OK
-Generando summary_report.txt (auto-final)
-Done: 2025-11-09T16:31:19Z
-Output directory: iot_evidences
-
 
 
