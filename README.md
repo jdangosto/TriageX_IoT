@@ -29,7 +29,10 @@ Written in **bash + python**, it extracts key artifacts, detects persistence mec
 - **Linux** (Ubuntu, Kali, Parrot, Debian ≥ 11)
 - Packages:
   ```bash
-  sudo apt install bash coreutils findutils rsync sqlite3 python3 dropbear-bin tar gzip grep
+  sudo apt update
+  sudo apt install -y bash coreutils findutils rsync sqlite3 python3 dropbear-bin \
+                    tar gzip grep qemu-utils libguestfs-tools squashfs-tools
+
 
 ## 🚀 Usage
 sudo mkdir -p /mnt/iotgoat_ro
