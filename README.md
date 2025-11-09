@@ -42,21 +42,22 @@ sudo guestmount -a IoTGoat-x86.vmdk -i --ro /mnt/iotgoat_ro/
 sudo ./triageX_iot.sh /mnt/iotgoat_ro /mnt/forensics/iot_evidences
 
 ## 📂 Output Strcuture
-iot_evidences/
-├── auth/
-│   └── dropbear_fingerprint.txt
-├── etc_full/
-├── persistence/
-├── network_configs/
-├── luci_artifacts/
-│   ├── luci_manifest.csv
-│   ├── suspicious_lua.txt
-│   └── luci_iotgoat_analysis.txt
-├── opkg_status
-├── opkg_anomalies.txt
-├── summary_report.txt
-├── forensic_report.md
-└── iot_evidences.tar.gz
+```
+  iot_evidences/
+  ├── auth/
+  │   └── dropbear_fingerprint.txt
+  ├── etc_full/
+  ├── persistence/
+  ├── network_configs/
+  ├── luci_artifacts/
+  │   ├── luci_manifest.csv
+  │   ├── suspicious_lua.txt
+  │   └── luci_iotgoat_analysis.txt
+  ├── opkg_status
+  ├── opkg_anomalies.txt
+  ├── summary_report.txt
+  ├── forensic_report.md
+  └── iot_evidences.tar.gz
 
 ## 🧩 Modules and Artifacts
 | Module                        | Collected Evidence                                         |
