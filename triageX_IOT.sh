@@ -65,7 +65,7 @@ safe_cp(){
   fi
 }
 
-# --- función de cierre garantizado ---
+# --- función de cierre ---
 finish(){
   [[ "$SUMMARY_WROTE" == "yes" ]] && return 0
   echo "[*] Generando summary_report.txt (auto-final)" | tee -a "$LOG"
@@ -429,7 +429,7 @@ fi
 REPORT="$OUT/forensic_report.md"
 if [[ ! -f "$REPORT" ]]; then
   {
-    echo "# DFIR IoT – TriageX IoT v6.1 (OpenWrt/IoTGoat)"
+    echo "# DFIR IoT – TriageX IoT v1.0 (OpenWrt/IoTGoat)"
     echo "- Fecha: $(NOW)"
     echo "- Rootfs: $ROOT"
     echo
