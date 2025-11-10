@@ -1,15 +1,9 @@
 #!/usr/bin/env bash
-# triageX_offline_iot_v6.1.sh
-# TRIAGEX IOT - OpenWrt (v6.1 Docente)
+# triageX_iot_v1.0.sh
+# TRIAGEX IOT - OpenWrt (v1.0 Docente)
 # Triage Tool for IoT OpenWrt (bash/python) - BETA
 # Author: Jesus D. Angosto (@jdangosto)
-# Notas v6.1:
-# - Más robusto: no se corta por errores en find/grep
-# - Soluciona fingerprint Dropbear (sin "is not a public key file")
-# - Siempre genera summary_report.txt (trap EXIT)
-# - Mensajes de progreso claros para docencia
 
-# Robustez: no abortar por retornos !=0 en subcomandos
 set -uo pipefail
 IFS=$'\n\t'
 
