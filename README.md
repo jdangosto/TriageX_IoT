@@ -41,7 +41,7 @@ sudo guestmount -a IoTGoat-x86.vmdk -i --ro /mnt/iotgoat_ro/
 ## Run the triage 
 sudo ./triageX_iot.sh /mnt/iotgoat_ro /mnt/forensics/iot_evidences
 
-## 📂 Output Strcuture
+## 📂 Output Structure
 ```
   iot_evidences/
   ├── auth/
