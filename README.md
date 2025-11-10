@@ -88,7 +88,7 @@ $ sudo ./triageX_IOT.sh /mnt/iotgoat_ro iot_evidences
 ##################################################################
 #                      TRIAGEX  IOT - OpenWRT                    #
 #                   ---------------------------                  #
-#                        Triage Tool for IoT OpenWRT (bash/python)       #
+#                Triage Tool for IoT OpenWRT (bash/python)       #
 #                           BETA Version                         #
 #----------------------------------------------------------------#
 #                     Author: Jesus D. Angosto                   #
